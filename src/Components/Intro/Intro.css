@@ -34,6 +34,7 @@
     color: var(--gray);
     margin-top: 10px;
   }
+
   .i-button {
     width: 6rem;
     height: 2rem;
@@ -69,10 +70,17 @@
     left: -3rem;
   }
   .i-hernan {
-    transform: scale(1.5);
+    transform: scale(1.4);
     left: 28%;
   }
   .i-thumbup {
+    transform: scale(1.1);
+    top: 10%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+  }
+  .i-glassemoji {
     transform: scale(0.62);
     top: -19%;
     left: -24%;
