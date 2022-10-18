@@ -33,28 +33,25 @@ const Services = () => {
       {/* right side */}
       <div className="cards">
         {/* first card */}
- <div style={{top: "-1rem", left: "16rem"}}>
-
+        <div style={{ top: "-1rem", left: "16rem" }}>
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
             detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
           />
- </div>
- 
-        {/* second card */}
-<div style={{top: "12rem", left: "-4rem"}}>
+        </div>
 
+        {/* second card */}
+        <div style={{ top: "12rem", left: "-4rem" }}>
           <Card
             emoji={Glasses}
             heading={"Developer"}
             detail={"Html, Css, JavaScript, React, Nodejs, Express"}
           />
-</div>
+        </div>
 
         {/* 3rd */}
-    <div style={{top: "19rem", left: "12rem"}}>
-
+        <div style={{ top: "19rem", left: "12rem" }}>
           <Card
             emoji={Humble}
             heading={"UI/UX"}
@@ -63,7 +60,7 @@ const Services = () => {
             }
             color="rgba(252, 166, 31, 0.45)"
           />
-    </div>
+        </div>
 
         <div
           className="blur s-blur2"
