@@ -14,7 +14,8 @@ const Portfolio = () => {
       {/* heading */}
       <span>Recent Projects</span>
       <span>Portfolio</span>
-
+      <div className="blur p-blur1" style={{ background: "var(--purple)" }}></div>
+      <div className="blur p-blur2" style={{ background: "skyblue" }}></div>
       {/* slider */}
       <Swiper 
         spaceBetween={30} 
