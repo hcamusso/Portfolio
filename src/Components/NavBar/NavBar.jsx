@@ -1,4 +1,5 @@
 import React from 'react';
+import Toggle from '../Toggle/Toggle';
 import './NavBar.css';
 
 export default function NavBar() {
@@ -6,7 +7,7 @@ export default function NavBar() {
     <div className="n-wrapper">
         <div className="n-left">
             <div className="n-name">Hernán Camusso</div>
-            <span>toggle</span>
+            <Toggle/>
         </div>
         <div className="n-right">
             <div className="n-list">

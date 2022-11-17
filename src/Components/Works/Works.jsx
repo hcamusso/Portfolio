@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
 import Amazon from "../../img/amazon.png";
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import "./Works.css";
+import { themeContext } from "../../Context";
 
 const Works = () => {
+    // context
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
   return (
     <div className="works" id="works">
       {/* left side */}
       <div className="w-left">
         <div className="awesome">
-          <span className="awesome1">Works for All these</span>
+          {/* dark Mode */}
+          <span style={{ color: darkMode ? "white" : "" }} className="awesome1">Works for All these</span>
           <span className="awesome2">Brands & Clients</span>
           <spane className="awesome3">
             Lorem ispum is simpley dummy text of printing of printing Lorem

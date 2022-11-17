@@ -1,9 +1,12 @@
 import React, { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import {themeContext} from '../../Context';
+import { useContext} from "react";
 
 const Contact = () => {
- 
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
   const form = useRef();
   const [done, setDone] = useState(false)
@@ -12,10 +15,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        "service_3oehapv",
+        "template_uhfemun",
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "wnPpciezGfWfAwHMj"
       )
       .then(
         (result) => {
@@ -35,7 +38,7 @@ const Contact = () => {
       <div className="w-left">
         <div className="awesome">
           {/* darkMode */}
-          <span>Get in Touch</span>
+          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
           <span className="awesome2">Contact me</span>
           <div
             className="blur s-blur1"
@@ -50,7 +53,7 @@ const Contact = () => {
           <input type="email" name="user_email" className="user" placeholder="Email"/>
           <textarea name="message" className="user" placeholder="Message"/>
           <input type="submit" value="Send" className="button"/>
-          <span>{done && "Thanks for Contacting me"}</span>
+          <span>{done ? "Thanks for Contacting me" : null}</span>
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}

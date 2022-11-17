@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./Intro.css";
 import GitHub from '../../img/github.png';
 import LinkedIn from '../../img/linkedin.png';
@@ -10,15 +10,17 @@ import thumbup from '../../img/thumbup.png';
 import Crown from '../../img/crown.png';
 import glassesimoji from '../../img/glassesimoji.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
-
-
+import { themeContext } from "../../Context";
 
 export default function Intro() {
+    // context
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <spam className="i-name-ch1">Hy! I'm</spam>
+          <spam  style={{ color: darkMode ? "white" : "" }} className="i-name-ch1">Hy! I'm</spam>
           <spam className="i-name-ch2"> Hernán Camusso</spam>
           <spam className="i-name-ch3">Full Stack Developer</spam>
         </div>

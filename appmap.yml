@@ -1,0 +1,5 @@
+name: Portfolio
+packages:
+  - path: src/Components
+exclude:
+    - node_modules

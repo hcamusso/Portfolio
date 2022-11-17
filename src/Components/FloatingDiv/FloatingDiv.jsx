@@ -2,10 +2,11 @@ import React from 'react'
 import './FloatingDiv.css'
 
 export default function FloatingDiv({image, txt1, txt2}) {
+
   return (
     <div className="floatingDiv">
         <img src={image} alt="" />
-        <span>
+        <span >
             {txt1}
             <br/>
             {txt2}
